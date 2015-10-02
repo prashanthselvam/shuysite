@@ -1,7 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(169, 157, 147, 0.7) ), url(/static/img/toronto_bg.jpg) no-repeat center center fixed;
+     background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(169, 157, 147, 0.92) ), url(/static/img/toronto_bg.jpg) no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -38,10 +38,9 @@ nav li {
 	display: table-cell;
 	margin: 0;
 	text-align: center;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 32px;
 	text-decoration: none;
-	text-shadow: 1px 1px #000000;
 }
 
 nav a {
@@ -62,7 +61,7 @@ nav a:hover {
 	height: 150px;
 	margin: 20px 0;
 	padding: 0 175px;
-	color: #F16600;
+	color: white;
 }
 
 .tile:hover {
@@ -70,23 +69,24 @@ nav a:hover {
 }
 
 #gd {
-	background: linear-gradient( rgba(9, 44, 74, 0.7), rgba(0, 0, 0, 0.7) ), url(/static/img/tile_gd_bg.jpg);
+	background: linear-gradient( rgba(220, 78, 83, 0.5), rgba(220, 78, 83, 0.5) ), url(/static/img/tile_gd_bg.jpg);
 	background-size: cover;
 }
 
 #fa {
-	background: linear-gradient( rgba(9, 44, 74, 0.7), rgba(0, 0, 0, 0.7) ), url(/static/img/tile_fa_bg.jpg);
+	background: linear-gradient( rgba(254, 179, 0, 0.5), rgba(254, 179, 0, 0.5) ), url(/static/img/tile_fa_bg.jpg);
 	background-size: cover;
 }
 
 #va {
-	background: linear-gradient( rgba(9, 44, 74, 0.7), rgba(0, 0, 0, 0.7) ), url(/static/img/tile_vid_bg.jpg);
+	background: linear-gradient( rgba(0, 114, 188, 0.5), rgba(0, 114, 188, 0.5) ), url(/static/img/tile_vid_bg.jpg);
 	background-size: cover;
 }
 
 .tile span {
 	line-height: 140px;
-	font-family: 'Alfa Slab One', cursive;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 36px;
+	font-weight: 300;
 }
 
