@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'thesite/home.html', {})
+
+def fine_art(request):
+	return render(request, 'thesite/fine_art.html', {})

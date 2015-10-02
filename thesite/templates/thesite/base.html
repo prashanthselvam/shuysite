@@ -1,0 +1,42 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="{% static "css/hover.css" %}" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="{% static "css/base.css" %}">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald|Open+Sans|Josefin+Sans|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="title col-md-12">
+					<h1>Shuyler Jude Nazareth</h1>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<nav class="navbar-nav">
+					<ul>
+						<li><a href="/">PORTFOLIO</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+			{% block content %}
+
+			{% endblock %}
+
+	</body>
+</html>

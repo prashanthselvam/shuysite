@@ -30,6 +30,10 @@ html, body {
 	margin-left: -3.12%;
 }
 
+nav {
+	margin-bottom: 30px;
+}
+
 nav ul {
 	display: table-row;
 }
@@ -74,12 +78,12 @@ nav a:hover {
 }
 
 #fa {
-	background: linear-gradient( rgba(254, 179, 0, 0.5), rgba(254, 179, 0, 0.5) ), url(/static/img/tile_fa_bg.jpg);
+	background: linear-gradient( rgba(0, 114, 188, 0.5), rgba(0, 114, 188, 0.5) ), url(/static/img/tile_vid_bg.jpg);
 	background-size: cover;
 }
 
 #va {
-	background: linear-gradient( rgba(0, 114, 188, 0.5), rgba(0, 114, 188, 0.5) ), url(/static/img/tile_vid_bg.jpg);
+	background: linear-gradient( rgba(254, 179, 0, 0.5), rgba(254, 179, 0, 0.5) ), url(/static/img/tile_fa_bg.jpg);
 	background-size: cover;
 }
 
@@ -89,4 +93,136 @@ nav a:hover {
 	font-size: 36px;
 	font-weight: 300;
 }
+
+
+/*------FINE ART GALLERY CSS---------*/
+
+.gallery {
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	width: 80%;
+}
+
+.fadein {
+	opacity:0.75;
+	transition: 1s ease;
+}
+
+.fadein:hover {
+	opacity:1;
+	transition: 1s ease;
+}
+
+.gallery-page-hr {
+	margin-bottom: 100px;
+	margin-top: 0;
+	width: 72%;
+}
+
+#drawings .thumb {
+    display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    float: left;
+    margin: 10px 0;
+}
+
+#drawings .title-thumb {
+	display: block;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    float: left;
+    margin: 10px 0;
+    line-height: 250px;
+    font-size: 52px;
+    font-family: 'josefin sans', sans-serif;
+}
+
+#drawings .thumb-tall {
+	display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 790px;
+    float: left;
+    margin: 10px 0;
+}
+
+
+#illustrations .thumb {
+	display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    float: left;
+    margin: 10px 0;
+}
+
+#illustrations .thumb-square {
+	display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 460px;
+    float: left;
+    margin: 10px 0;
+}
+
+#illustrations .title-thumb {
+	display: block;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    float: left;
+    margin: 10px 0;
+    line-height: 220px;
+    font-size: 52px;
+    font-family: 'josefin sans', sans-serif;
+}
+
+
+#illustrations .thumb-med {
+    display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    float: left;
+    margin: 10px 0;
+}
+
+#illustrations .thumb-med-square {
+    display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 520px;
+    float: left;
+    margin: 10px 0;
+}
+
+#illustrations .thumb-med-long {
+    display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: 130% 100%;
+    width: 100%;
+    height: 520px;
+    float: left;
+    margin: 10px 0;
+}
+
 
