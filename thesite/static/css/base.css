@@ -1,0 +1,92 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+     background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(169, 157, 147, 0.7) ), url(/static/img/toronto_bg.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+.title {
+	text-align: center;
+	padding: 20px 0 30px 0;
+}
+
+.title hr {
+	margin-top: -10px;
+}
+
+.title h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 52px;
+}
+
+.navbar-nav {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+	margin-left: -3.12%;
+}
+
+nav ul {
+	display: table-row;
+}
+
+nav li {
+	display: table-cell;
+	margin: 0;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	text-decoration: none;
+	text-shadow: 1px 1px #000000;
+}
+
+nav a {
+	color: #053A69;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+.portfolio-menu {
+	margin-top: 20px;
+}
+
+.tile {
+	width: 100%;
+	border: 5px solid black;
+	height: 150px;
+	margin: 20px 0;
+	padding: 0 175px;
+	color: #F16600;
+}
+
+.tile:hover {
+	color: white;
+}
+
+#gd {
+	background: linear-gradient( rgba(9, 44, 74, 0.7), rgba(0, 0, 0, 0.7) ), url(/static/img/tile_gd_bg.jpg);
+	background-size: cover;
+}
+
+#fa {
+	background: linear-gradient( rgba(9, 44, 74, 0.7), rgba(0, 0, 0, 0.7) ), url(/static/img/tile_fa_bg.jpg);
+	background-size: cover;
+}
+
+#va {
+	background: linear-gradient( rgba(9, 44, 74, 0.7), rgba(0, 0, 0, 0.7) ), url(/static/img/tile_vid_bg.jpg);
+	background-size: cover;
+}
+
+.tile span {
+	line-height: 140px;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 36px;
+}
+
