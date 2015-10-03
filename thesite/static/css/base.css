@@ -140,6 +140,7 @@ nav a:hover {
 
 #small-menu	{
 	position: fixed;
+	margin: auto;
 	width: 100%;
 	top: 0;
 	bottom: 0;
@@ -147,6 +148,9 @@ nav a:hover {
 	background: #EFEF7E;
 }
 
+#small-menu ul {
+	padding-left: 0;
+}
 
 
 #small-menu li {
