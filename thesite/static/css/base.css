@@ -27,7 +27,7 @@ html, body {
 	width: 100%;
 	border-collapse: collapse;
 	border: none;
-	margin-left: -3.12%;
+	margin: auto;
 }
 
 nav {
@@ -160,6 +160,7 @@ nav a:hover {
     text-indent: -1000px; /* hide link text */
     overflow: hidden;
     background-size: cover;
+    background-position-x: 33%;
     width: 100%;
     height: 520px;
     float: left;
