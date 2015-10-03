@@ -12,20 +12,23 @@
 		<link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald|Open+Sans|Josefin+Sans|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
 				<div class="title col-md-12">
-					<h1>Shuyler Jude Nazareth</h1>
+					<span class="title-header">Shuyler Jude Nazareth</span>
+					<span id="small-nav">&#9776
+					</span>
 					<hr>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
 				<nav class="navbar-nav">
-					<ul>
+					<ul class="regular-nav">
 						<li><a href="/">PORTFOLIO</a></li>
 						<li><a href="#">ABOUT</a></li>
 						<li><a href="#">CONTACT</a></li>
@@ -33,10 +36,48 @@
 				</nav>
 			</div>
 		</div>
+		<div id="small-menu" style="z-index:-1;">
+			<div class="container">
+				<a id="close-button">
+						  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						</a>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<ul>
+							<li><a href="/">PORTFOLIO</a></li>
+							<li><a>ABOUT</a></li>
+							<li><a>CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
 			{% block content %}
 
 			{% endblock %}
+
+		<script>
+			$('#small-nav').click(function() {
+				// $('#small-menu').switchClass("hidden1","active1").animate( {opacity:'.90'}, {duration:250});
+				// $('#small-menu').css('z-index',14)
+				// .fadeTo('slow', .92 )
+				// .fadeTo('slow', 1, function(){
+				// 	$('#small-menu').css('z-index',zindex);
+				// });
+				$('#small-menu').animate({
+					opacity: 0.92,
+				}, 400).css('z-index',1400);
+				$(this).animate( {opacity:'0'}, {duration:250});
+			});
+
+			$('#close-button').click(function() {
+				// $('#small-menu').addClass('hidden1').removeClass('active1');
+				// $('#small-menu').fadeTo('slow', 0 );
+				$('#small-menu').animate( {opacity:'0'}, {duration:250}).fadeTo('slow', 0 ).css('z-index',-1);
+				$('#small-nav').animate( {opacity:'100'}, {duration:2000});
+			});
+		</script>
 
 	</body>
 </html>
