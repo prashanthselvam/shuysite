@@ -119,7 +119,7 @@ nav a:hover {
 	width: 72%;
 }
 
-#drawings .thumb {
+.thumb {
     display: block;
     text-indent: -1000px; /* hide link text */
     overflow: hidden;
@@ -130,7 +130,7 @@ nav a:hover {
     margin: 10px 0;
 }
 
-#drawings .title-thumb {
+.title-thumb {
 	display: block;
     overflow: hidden;
     background-size: cover;
@@ -143,13 +143,25 @@ nav a:hover {
     font-family: 'josefin sans', sans-serif;
 }
 
-#drawings .thumb-tall {
+.thumb-tall {
 	display: block;
     text-indent: -1000px; /* hide link text */
     overflow: hidden;
     background-size: cover;
     width: 100%;
     height: 790px;
+    float: left;
+    margin: 10px 0;
+}
+
+
+.thumb-square {
+	display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 520px;
     float: left;
     margin: 10px 0;
 }
