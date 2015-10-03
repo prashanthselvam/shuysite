@@ -76,12 +76,12 @@ nav a:hover {
 	background-size: cover;
 }
 
-#fa {
+#va {
 	background: linear-gradient( rgba(0, 114, 188, 0.5), rgba(0, 114, 188, 0.5) ), url(/static/img/tile_vid_bg.jpg);
 	background-size: cover;
 }
 
-#va {
+#fa {
 	background: linear-gradient( rgba(254, 179, 0, 0.5), rgba(254, 179, 0, 0.5) ), url(/static/img/tile_fa_bg.jpg);
 	background-size: cover;
 }
