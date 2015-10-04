@@ -2,7 +2,7 @@ html, body {
     max-width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-     background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(169, 157, 147, 0.92) ), url(/static/img/toronto_bg.jpg) no-repeat center center fixed;
+     background: linear-gradient( rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.95) ), url(/static/img/toronto_bg.jpg) no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -19,8 +19,8 @@ html, body {
 }
 
 .title-header {
-	font-family: 'Pacifico', cursive;
-	font-size: 52px;
+	font-family: 'Poiret One', sans-serif;
+	font-size: 54px;
 }
 
 .navbar-nav {
@@ -209,9 +209,15 @@ nav a:hover {
 	}
 }
 
+
+
 #gd {
 	background: linear-gradient( rgba(220, 78, 83, 0.5), rgba(220, 78, 83, 0.5) ), url(/static/img/tile_gd_bg.jpg);
 	background-size: cover;
+}
+
+#gd:before {
+	background: #DC4E53;
 }
 
 #va {
@@ -219,15 +225,25 @@ nav a:hover {
 	background-size: cover;
 }
 
+#va:before {
+	background: #0072BC;
+}
+
+
 #fa {
 	background: linear-gradient( rgba(254, 179, 0, 0.5), rgba(254, 179, 0, 0.5) ), url(/static/img/tile_fa_bg.jpg);
 	background-size: cover;
 }
 
+#fa:before {
+	background: #FEB300;
+}
+
 .tile span {
 	line-height: 140px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 36px;
+	font-family: 'Poiret One', sans-serif;
+	text-transform: uppercase;
+	font-size: 28px;
 	font-weight: 300;
 }
 
