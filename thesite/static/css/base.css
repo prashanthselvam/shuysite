@@ -146,6 +146,7 @@ nav a:hover {
 	bottom: 0;
 	padding: 15% 0;
 	background: #EFEF7E;
+	opacity: 0;
 }
 
 #small-menu ul {
