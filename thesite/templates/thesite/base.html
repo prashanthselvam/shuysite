@@ -8,11 +8,9 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link href="{% static "css/hover.css" %}" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}">
 		<link rel="stylesheet" href="{% static "css/base.css" %}">
 		<link href='https://fonts.googleapis.com/css?family=Pacifico|Oswald|Open+Sans|Josefin+Sans|Slabo+27px|Poiret+One|Quicksand:400,300|Questrial' rel='stylesheet' type='text/css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -57,14 +55,13 @@
 
 			{% endblock %}
 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="{% static "js/jquery.prettyPhoto.js" %}" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$('#small-nav').click(function() {
-				// $('#small-menu').switchClass("hidden1","active1").animate( {opacity:'.90'}, {duration:250});
-				// $('#small-menu').css('z-index',14)
-				// .fadeTo('slow', .92 )
-				// .fadeTo('slow', 1, function(){
-				// 	$('#small-menu').css('z-index',zindex);
-				// });
 				$('#small-menu').animate({
 					opacity: 0.92,
 				}, 400).css('z-index',1400);
@@ -76,6 +73,10 @@
 				// $('#small-menu').fadeTo('slow', 0 );
 				$('#small-menu').animate( {opacity:'0'}, {duration:250}).fadeTo('slow', 0 ).css('z-index',-1);
 				$('#small-nav').animate( {opacity:'100'}, {duration:200});
+			});
+
+			$(document).ready(function(){
+				$("a[rel^='lightbox']").prettyPhoto();
 			});
 		</script>
 

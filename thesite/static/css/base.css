@@ -259,6 +259,18 @@ nav a:hover {
 	width: 80%;
 }
 
+.the_thumbs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.the_thumbs_li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
 .fadein {
 	opacity:0.75;
 	transition: 1s ease;
