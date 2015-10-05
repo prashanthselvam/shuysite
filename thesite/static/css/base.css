@@ -1,17 +1,32 @@
+html {
+  overflow-y: scroll;
+}
+
+
 html, body {
     max-width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-     background: linear-gradient( rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.985) ), url(/static/img/toronto_bg.jpg) no-repeat center center fixed;
+    background: white;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
 }
 
+#header-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#page_content {
+	margin-top: 200px;
+}
+
 .title {
 	text-align: center;
-	padding: 20px 0 30px 0;
+	padding: 20px 0 15px 0;
 }
 
 .title hr {
@@ -21,6 +36,7 @@ html, body {
 .title-header {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 54px;
+	color: black;
 }
 
 .navbar-nav {
@@ -46,13 +62,13 @@ nav li {
 	margin: 0;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 32px;
+	font-size: 28px;
 	text-decoration: none;
 	width: 33%;
 }
 
 nav a {
-	color: #053A69;
+	color: #525252;
 }
 
 nav a:hover {

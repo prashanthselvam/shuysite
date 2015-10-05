@@ -7,3 +7,6 @@ def home(request):
 
 def fine_art(request):
 	return render(request, 'thesite/fine_art.html', {})
+
+def about(request):
+	return render(request, 'thesite/about.html', {})
