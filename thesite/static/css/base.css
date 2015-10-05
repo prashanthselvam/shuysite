@@ -14,15 +14,7 @@ html, body {
 	  background-size: cover;
 }
 
-#header-content {
-	position: absolute;
-	left: 0;
-	right: 0;
-}
 
-#page_content {
-	margin-top: 200px;
-}
 
 .title {
 	text-align: center;
