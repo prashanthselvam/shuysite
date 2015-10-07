@@ -420,11 +420,230 @@ nav a:hover {
 
 /*------ GRAPHIC DESIGN GALLERY ------*/
 
-#graphic-design img {
-	width: 100%;
-	padding: 5px;
+
+
+#gd-display {
+	margin: 80px 0 20px 0;
 }
 
+#carousel {
+	z-index: 10;
+}
+
+#gd-cover {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2B2B2B;
+    margin: 0;
+    margin-left: -20px;
+    opacity: 0;
+}	
+
+.carousel-menu-left {
+	display: inline-block;
+	width: 100%;
+	margin-right: 25px;
+	z-index: -3;
+	margin-top: 20px;
+}
+
+
+.carousel-menu-left li {
+	display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover !important;
+    width: 100%;
+    height: 125px;
+    float: left;
+    margin: 10px 0;
+    opacity: 0.25;
+    transition: 0.5s ease;
+}
+
+.carousel-menu-left li:hover {
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.carousel-menu-right {
+	display: inline-block;
+	width: 100%;
+	margin-left: -25px;
+	z-index: -3;
+	margin-top: 20px;
+}
+
+.carousel-menu-right li {
+	display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover !important;
+    width: 100%;
+    height: 125px;
+    float: left;
+    margin: 10px 0;
+    opacity: 0.25;
+    transition: 0.5s ease;
+}
+
+.carousel-menu-right li:hover {
+	opacity: 0.8;
+	transition: 0.5s ease;
+}	
+
+
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-move-left {
+	opacity: 0;
+	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 38px;
+    line-height: 612px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-move-right {
+	opacity: 0;
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    line-height: 612px;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-move-left:hover, .carousel-move-right:hover{
+	opacity: 0.45;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 612px;
+  width: 792px;
+  margin: auto;
+}
+.item:nth-child(1) {
+	background: url(/static/img/graphic_design/gd_title.jpg);
+}
+.item:nth-child(2) {
+	background: url(/static/img/graphic_design/gd_contents.jpg);
+}
+.item:nth-child(3) {
+	background: url(/static/img/graphic_design/gd_1_a.jpg);
+}
+.item:nth-child(4) {
+	background: url(/static/img/graphic_design/gd_1_b.jpg);
+}
+.item:nth-child(5) {
+	background: url(/static/img/graphic_design/gd_2_a.jpg);
+}
+.item:nth-child(6) {
+	background: url(/static/img/graphic_design/gd_2_b.jpg);
+}
+.item:nth-child(7) {
+	background: url(/static/img/graphic_design/gd_3_a.jpg);
+}
+.item:nth-child(8) {
+	background: url(/static/img/graphic_design/gd_3_b.jpg);
+}
+.item:nth-child(9) {
+	background: url(/static/img/graphic_design/gd_4_a.jpg);
+}
+.item:nth-child(10) {
+	background: url(/static/img/graphic_design/gd_4_b.jpg);
+}
+.item:nth-child(11) {
+	background: url(/static/img/graphic_design/gd_5_a.jpg);
+}
+.item:nth-child(12) {
+	background: url(/static/img/graphic_design/gd_5_b.jpg);
+}
+.item:nth-child(13) {
+	background: url(/static/img/graphic_design/gd_6_a.jpg);
+}
+.item:nth-child(14) {
+	background: url(/static/img/graphic_design/gd_6_b.jpg);
+}
+.item:nth-child(15) {
+	background: url(/static/img/graphic_design/gd_7_a.jpg);
+}
+.item:nth-child(16) {
+	background: url(/static/img/graphic_design/gd_7_b.jpg);
+}
+
+
+
+
+
+/*-----------VIDEO AND ANIMATIONS GALLERY---------*/
+
+.vid_tile {
+	width: 100%;
+	margin: 80px 0 60px 0;
+}
+
+.vid_text {
+	text-align: center !important;
+	margin: auto;
+}
+
+.vid_text h4 {
+	font-size: 24px;
+    background-color: #0072BC;
+    padding: 0.5em;
+    display: inline-block;
+    color: white;
+}
+
+.vid_text h5 {
+	font-size: 16px;
+    margin-top: 20px;
+}
+
+.vid_vid {
+	text-align: right;
+}
 
 
 /*----- ABOUT ME PAGE -----*/
@@ -436,9 +655,8 @@ nav a:hover {
 
 #about-me h4 {
 	margin-bottom: 15px;
-    font-family: 'Poiret One', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 #about-me hr {

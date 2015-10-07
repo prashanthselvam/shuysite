@@ -6,8 +6,12 @@ $('#small-nav').click(function() {
 });
 
 $('#close-button').click(function() {
-$('#small-menu').animate( {opacity:'0'}, {duration:250}).fadeTo('slow', 0 ).css('z-index',-1);
-$('#small-nav').animate( {opacity:'100'}, {duration:200});
+	$('#small-menu').animate({
+		opacity:0,
+	}, 250, function() {
+		$('#small-menu').css('z-index', -5);
+	});
+	$('#small-nav').animate( {opacity:'100'}, {duration:200});
 });
 
 $(document).ready(function(){
@@ -52,3 +56,19 @@ $(function(){
 });
 
 
+$('.carousel').carousel();
+
+// $(function(){
+// 	$(window).scroll(function() {
+// 		if ($(this).scrollTop() >= 12) {
+// 			$('#gd-cover').animate({
+// 				opacity: 1,
+// 			}, 400);
+// 		}
+// 		if ($(this).scrollTop() <= 12) {
+// 			$('#gd-cover').animate({
+// 				opacity:0,
+// 			}, 400);
+// 		}
+// 	});
+// });

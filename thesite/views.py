@@ -13,3 +13,6 @@ def about(request):
 
 def graphic_design(request):
 	return render(request, 'thesite/graphic_design.html', {})
+
+def video(request):
+	return render(request, 'thesite/video.html', {})

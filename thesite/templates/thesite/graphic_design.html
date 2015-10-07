@@ -2,55 +2,57 @@
 
 {% block content %}
 
-<div id="graphic-design" class="container gallery">
-	<div class="row">
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_title.jpg"><img src="/static/img/graphic_design/gd_title.jpg"></img></a>
-		</div>
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_contents.jpg"><img src="/static/img/graphic_design/gd_contents.jpg"></img></a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_1_a.jpg"><img src="/static/img/graphic_design/gd_1_a.jpg"></img></a>
-		</div>
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_1_b.jpg"><img src="/static/img/graphic_design/gd_1_b.jpg"></img></a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_2_a.jpg"><img src="/static/img/graphic_design/gd_2_a.jpg"></img></a>
-		</div>
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_2_b.jpg"><img src="/static/img/graphic_design/gd_2_b.jpg"></img></a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_3_a.jpg"><img src="/static/img/graphic_design/gd_3_a.jpg"></img></a>
-		</div>
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_3_b.jpg"><img src="/static/img/graphic_design/gd_3_b.jpg"></img></a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_4_a.jpg"><img src="/static/img/graphic_design/gd_4_a.jpg"></img></a>
-		</div>
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_4_b.jpg"><img src="/static/img/graphic_design/gd_4_b.jpg"></img></a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_5_a.jpg"><img src="/static/img/graphic_design/gd_5_a.jpg"></img></a>
-		</div>
-		<div class="col-md-6">
-			<a rel="lightbox[graphic_design]" href="/static/img/graphic_design/gd_5_b.jpg"><img src="/static/img/graphic_design/gd_5_b.jpg"></img></a>
-		</div>
-	</div>
+<div id="gd-display" class="container-fluid">
+<div id="gd-cover"></div>
+
+	<div class="col-md-2">
+		<div  class="carousel-menu-left">
+<ol>
+        <li data-target="#carousel" data-slide-to="1" style="background:url(/static/img/graphic_design/gd_contents.jpg);"></li>
+        <li data-target="#carousel" data-slide-to="3" style="background:url(/static/img/graphic_design/gd_1_b.jpg);"></li>
+        <li data-target="#carousel" data-slide-to="5" style="background:url(/static/img/graphic_design/gd_2_b.jpg);"></li>
+        <li data-target="#carousel" data-slide-to="7" style="background:url(/static/img/graphic_design/gd_3_b.jpg);"></li>
+    </ol>
 </div>
+</div>
+<div class="col-md-8">
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-move-left left" href="#carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <a class="carousel-move-right right" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+</div>
+</div>
+<div class="col-md-2">
+	<div class="carousel-menu-right">
+		<ol>
+         <li data-target="#carousel" data-slide-to="9" style="background:url(/static/img/graphic_design/gd_4_b.jpg);"></li>
+        <li data-target="#carousel" data-slide-to="11" style="background:url(/static/img/graphic_design/gd_5_b.jpg);"></li>
+        <li data-target="#carousel" data-slide-to="13" style="background:url(/static/img/graphic_design/gd_6_b.jpg);"></li>
+        <li data-target="#carousel" data-slide-to="15" style="background:url(/static/img/graphic_design/gd_7_b.jpg);"></li>
+    </ol>
+</div>
+</div>
+</div>
+
+
 
 {% endblock %}
