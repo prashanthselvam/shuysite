@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 $(function(){
 	$(window).scroll(function() {
-		if ($(this).scrollTop() >= 72) {
+		if ($(this).scrollTop() >= 144) {
 			$('#prof-pic').addClass('fixed');
 		}
 		else {
@@ -50,3 +50,5 @@ $(function(){
 		}
 	});
 });
+
+

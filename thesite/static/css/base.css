@@ -418,6 +418,15 @@ nav a:hover {
 }
 
 
+/*------ GRAPHIC DESIGN GALLERY ------*/
+
+#graphic-design img {
+	width: 100%;
+	padding: 5px;
+}
+
+
+
 /*----- ABOUT ME PAGE -----*/
 
 #about-me {
@@ -432,6 +441,11 @@ nav a:hover {
     font-weight: bold;
 }
 
+#about-me hr {
+	width: 75%;
+	margin-top: 40px;
+}
+
 .about-me-summary {
 	line-height: 1.75em;
 }
@@ -442,7 +456,7 @@ nav a:hover {
 
 .fixed {
 	position: fixed;
-	top: 20.3%;
+	top: 9.3%;
 }
 
 #resume {
@@ -451,17 +465,16 @@ nav a:hover {
 
 #resume img {
 	height: auto;
-	width: 84px;
+	width: 95px;
 }
 
 #resume h4 {
 	text-align: center;
 }
 
-#resume h5 {
-	margin: 30px 0 15px;
-	font-size: larger;
-	text-decoration: underline;
+
+#resume .col-md-3 {
+	text-align: center;
 }
 
 .resume-piece {
@@ -478,11 +491,17 @@ nav a:hover {
 	border-collapse: collapse;
 	border: none;
 	margin: auto;
+	margin-top: 40px;
 }
 
+.software_title {
+	font-size: 18px !important;
+    line-height: 20px;
+    font-family: 'Open+sans', sans-serif;
+}
 
 #education, #work-experience, #software-experience {
-	margin: 80px 0 20px 0;
+	margin: 40px 0 20px 0;
 }
 
 
@@ -493,15 +512,17 @@ nav a:hover {
 }
 
 .software_table li {
-	display: table-cell;
-	margin: 0;
-	text-align: center;
-	font-family: 'Open+Sans', sans-serif;
-	text-decoration: none;
-	width: 25%;
+    display: table-cell;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    width: 25%;
 }
 
-.software_table img {
+#software-experience img {
 	height: 52px;
 	width: 52px;
 }

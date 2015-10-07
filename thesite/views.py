@@ -10,3 +10,6 @@ def fine_art(request):
 
 def about(request):
 	return render(request, 'thesite/about.html', {})
+
+def graphic_design(request):
+	return render(request, 'thesite/graphic_design.html', {})
