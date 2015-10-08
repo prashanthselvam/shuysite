@@ -14,7 +14,6 @@ html, body {
 	  background-size: cover;
 }
 
-
 .title {
 	text-align: center;
 	padding: 20px 0 15px 0;
@@ -440,7 +439,6 @@ nav a:hover {
     margin: 0;
     margin-left: -20px;
     opacity: 0;
-    display: none;
 }	
 
 .carousel-menu-left {

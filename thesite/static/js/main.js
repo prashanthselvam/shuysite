@@ -74,20 +74,21 @@ $('.carousel').carousel();
 // });
 
 
-var fadeStart=100 // 100px scroll or less will equiv to 1 opacity
+var fadeStart=80 // 100px scroll or less will equiv to 1 opacity
     ,fadeUntil=250 // 200px scroll or more will equiv to 0 opacity
     ,fading = $('#gd-cover')
 ;
 
 $(window).bind('scroll', function(){
-    var offset = $(document).scrollTop()
+    var offset = $(window).scrollTop()
     ;
     if( offset<=fadeStart ){
         opacity=0;
         display='none';
-    }else if ($(window).scrollTop() <= $(document).height() - $(window).height()) {
-        opacity=0+offset/fadeUntil;
+    }else if (offset <= $(document).height()) {
+        opacity= 0 + ((offset - fadeStart)/($(document).height()-$(window).height()-fadeStart));
         display='block';
     }
     fading.css('opacity',opacity).css('display',display).html(opacity);
+    console.log($(document).height()-$(window).height(),offset)
 });
