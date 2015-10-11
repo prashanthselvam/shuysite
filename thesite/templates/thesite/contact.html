@@ -1,0 +1,13 @@
+{% extends "thesite/base.html" %}
+
+{% block content %}
+
+<form method="post" style="z-index:1000">
+    {% csrf_token %}
+    {{ form }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+
+{% endblock %}

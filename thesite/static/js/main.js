@@ -90,5 +90,4 @@ $(window).bind('scroll', function(){
         display='block';
     }
     fading.css('opacity',opacity).css('display',display).html(opacity);
-    console.log($(document).height()-$(window).height(),offset)
 });

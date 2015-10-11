@@ -65,6 +65,14 @@ nav a:hover {
 	text-decoration: none;
 }
 
+nav a:active {
+	text-decoration: none;
+}
+
+nav a:visited {
+	text-decoration: none;
+}
+
 #small-nav {
 	float:right;
 	margin-right: 10px;
