@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from forms import ContactForm
+from .forms import ContactForm
 
 
 # Create your views here.
@@ -22,21 +21,18 @@ def video(request):
 	return render(request, 'thesite/video.html', {})
 
 def contact_form(request):
-    if request.method == 'GET':
-        form = ContactForm()
-    else:
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            add = form.cleaned_data['add']
-            # date = form.cleaned_data['date']
-            try:
-                send_mail(name, add, email, ['pselvam@conncoll.edu'])
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-            return redirect('thanks')
-    return render(request, "thesite/contact.html", {'form': form})
+	if request.method=="POST":
+		form=ContactForm(request.POST)
+		if form.is_valid():
+			message = form.save()
+			global thanks
+			form = ContactForm()
+			thanks = 'Thanks! I will get back to you as soon as possible.'
 
-def thanks(request):
-    return HttpResponse('Thank you for your message.')
+	else:
+		form = ContactForm()
+		thanks = ''
+
+	return render(request, 'thesite/contact.html', {'form':form, 'thanks':thanks,})
+
+

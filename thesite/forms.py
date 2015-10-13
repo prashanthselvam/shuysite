@@ -1,9 +1,16 @@
-from django import forms
-from django.utils import timezone
+from django.forms import ModelForm, Textarea, TextInput
+from .models import Message
 
-class ContactForm(forms.Form):
-	name = forms.CharField(max_length=40)
-	email = forms.EmailField(max_length=254)
-	add = forms.CharField(max_length=40)
-	# text = forms.TextField()
-	# date = timezone.now
+class ContactForm(ModelForm):
+
+	class Meta:
+		model = Message
+		fields = ('name','subject','email', 'text')
+		error_css_class = 'error'
+		required_css_class = 'required'
+		widgets = {
+            'name': TextInput(attrs={'placeholder': 'Name', 'class':'contact'}),
+            'email': TextInput(attrs={'placeholder': 'Email', 'class':'contact'}),
+            'subject': TextInput(attrs={'placeholder': 'Subject', 'class':'contact'}),
+            'text': Textarea(attrs={'placeholder':'Message', 'class':'contact', 'rows':'5'})
+        }

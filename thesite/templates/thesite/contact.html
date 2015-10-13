@@ -2,12 +2,47 @@
 
 {% block content %}
 
-<form method="post" style="z-index:1000">
-    {% csrf_token %}
-    {{ form }}
-    <div class="form-actions">
-      <button type="submit">Send</button>
-    </div>
-</form>
+<div id="contactform" class="container">
+	<div class="row">
+		<div class="col-md-5 col-md-offset-1">
+			<div class="contact_text">
+				<h4>Get in touch!</h4>
+		<p>Please feel free to leave me a message about a potential project, feedback on my work, or just to say hi. 
+		</p>
+		<div class="contact_card">
+		<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong>&nbsp;&nbsp;&nbsp;&nbsp;shuyler.nazareth@gmail.com</strong></p>
+		<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><strong>&nbsp;&nbsp;&nbsp;&nbsp;860.574.3244</strong></p>
+	</div>
+	</div>
+</div>
+	<div class="col-md-4">
+
+		<form method="post">
+		    {% csrf_token %}
+		    {{ form.name }}
+		    <br>
+		    {{ form.email }}
+		    <br>
+		    {{ form.subject }}
+		    <br>
+		    {{ form.text }}
+
+		    <div class="form-actions">
+		    {% if form.errors %}
+		    	<span class="error_msg">
+		    		Oops! Not a valid entry.
+		    	</span>
+		    {% endif %}
+
+		    <span class="thanks">
+		    {{ thanks }}
+		</span>
+
+		      <button type="submit">Send</button>
+		    </div>
+		</form>
+	</div>
+
+</div>
 
 {% endblock %}
